@@ -5,7 +5,7 @@
 
 Docente: MSc Eng. Miguel Ortiz (miguel.ortizp@upb.edu.co)
 
-Estudiantes:
+Estudiante:
 - Sebastian Andres Zabala Saenz 
 (sebastian.zabala@upb.edu.co)
 
