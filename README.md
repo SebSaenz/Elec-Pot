@@ -1,4 +1,4 @@
-# Electróna de Potencia
+# Electrónicaaaaa de Potencia
 ## Programa de Ingeniería Electrónica
 ## Universidad Pontificia Bolivariana - Seccional Montería
 ## 2025-20
