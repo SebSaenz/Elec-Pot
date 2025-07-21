@@ -2,6 +2,7 @@
 ## Programa de Ingeniería Electrónica
 ## Universidad Pontificia Bolivariana - Seccional Montería
 ## 2025-20
+## Juanito
 
 Docente: MSc Eng. Miguel Ortiz (miguel.ortizp@upb.edu.co)
 
