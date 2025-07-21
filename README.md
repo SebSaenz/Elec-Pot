@@ -5,9 +5,12 @@
 
 Docente: MSc Eng. Miguel Ortiz (miguel.ortizp@upb.edu.co)
 
-Estudiante:
+Estudiantes:
 - Sebastian Andres Zabala Saenz 
 (sebastian.zabala@upb.edu.co)
+
+- Juan Andres Gonzalez Dean
+(deanjuanandres@gmail.com)
 
 ## Contenido
 
