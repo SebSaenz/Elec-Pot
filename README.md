@@ -99,7 +99,7 @@ Los diodos de potencia son dispositivos semiconductores utilizados como interrup
 - Los diodos Schottky son especialmente eficientes en aplicaciones para reducir pérdidas debido a su baja caída de tensión y ausencia de recuperación inversa significativa.
 - La elección del tipo de diodo de potencia depende de la frecuencia de operación del circuito y los requerimientos específicos de tensión, corriente y velocidad de conmutación.
 
-Este resumen recoge los aspectos fundamentales sobre las características de los diodos de potencia según el texto de Daniel W. Hart, ofreciendo una base clara para su estudio, diseño y aplicación en electrónica de potencia.
+
 
 <div style="text-align: center">⁂</div>
 
