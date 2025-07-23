@@ -16,7 +16,6 @@ Estudiantes:
 
 | Módulo | Tema                                      | Enlace                                     |
 | ------ | ----------------------------------------- | ------------------------------------------ |
-| 0      | Tutoriales                                | [Ver Guía](./guia_0_Tutoriales)    |
 | 1      | Fundamentos y Diodos de Potencia          | [Ver Guía](./guia_1_fundamentos_diodos)    |
 | 2      | Rectificadores No Controlados             | [Ver Guía](./guia_2_rectificadores)        |
 | 3      | Transistores de Potencia                  | [Ver Guía](./guia_3_transistores_potencia) |
