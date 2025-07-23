@@ -13,7 +13,7 @@ Estudiantes:
 (deanjuanandres@gmail.com)
 
 - Jairo David Rodriguez Rodriguez
-()
+(jairo.rodriguezr@upb.edu.co)
 
 -Alvaro Jesus Negrette Buelvas
 (alvaro.negrette@upb.edu.co)
