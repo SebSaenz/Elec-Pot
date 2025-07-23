@@ -15,8 +15,8 @@ Estudiantes:
 - Jairo David Rodriguez Rodriguez
 ()
 
--Alvaro 
-()
+-Alvaro Jesus Negrette Buelvas
+(alvaro.negrette@upb.edu.co)
 
 ## Contenido
 
