@@ -12,6 +12,12 @@ Estudiantes:
 - Juan Andres Gonzalez Dean
 (deanjuanandres@gmail.com)
 
+- Jairo David Rodriguez Rodriguez
+()
+
+-Alvaro 
+()
+
 ## Contenido
 
 | Módulo | Tema                                      | Enlace                                     |
