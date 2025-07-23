@@ -11,6 +11,7 @@ Power diodes are semiconductor devices designed for high-voltage and high-curren
 - *Blocking State:* Prevents current in reverse, up to a rated reverse voltage (VRRM/PIV).
 - *Reverse Recovery:* Power diodes display a ‘reverse recovery time’ ($t_{rr}$) after switching from forward to reverse bias, which impacts switching losses and suitability for different frequencies[^1][^2].
 - *Mounting Types:* Stud-mounted or disk (hockey puck) packages facilitate high current and heat dissipation[^2].
+- *Materials:* Diodes are generally made of silicon (Si) or germanium (Ge), materials to which impurities are added to form p-type regions and n-type regions.
 
 
 ## 2. Types of Power Diodes
