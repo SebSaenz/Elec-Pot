@@ -10,6 +10,7 @@ Power diodes are semiconductor devices designed for high-voltage and high-curren
 - **Package Types:** Common formats include stud-mounted and disc packages, optimized for power dissipation.
 
 ![Curva característica del diodo](Images/Curva%20diodo.jpg)
+<p align="center"><b>Fig. 1.</b> (I-V) characteristic of a diode.</p>
 
 
 ## 2. Types of Power Diodes
@@ -33,6 +34,7 @@ The freewheeling, or flyback diode, is used across inductive loads to:
 - Smooth output currents, especially important in supplies for DC motors and RL loads.
 
 ![Diodo Freewheeling o Flyback](Images/Freewheeling%20diodo.jpg)
+<p align="center"><b>Fig. 2.</b> Basic Step-Down (Buck) Converter Circuit with Low-Pass Filter and Freewheeling Diode.</p>
 
 
 ## 4. Diode Rectifiers
@@ -43,6 +45,7 @@ The freewheeling, or flyback diode, is used across inductive loads to:
 - **Center-Tapped Rectifier:** Uses two diodes and a transformer with a center tap.
 
 ![Rectificador de onda completa](Images/Rectificador%20onda%20completa.jpg)
+<p align="center"><b>Fig. 3.</b> full-wave rectifier.</p>
 
 
 ### 4.2 Three-Phase Rectifiers
@@ -56,6 +59,7 @@ The freewheeling, or flyback diode, is used across inductive loads to:
 | Three-Phase Bridge       | 6           | ~0.05        | High-power, industrial drives |
 
 ![Rectificador trifásico](Images/Trifasico.jpg)
+<p align="center"><b>Fig. 4.</b> Three-phase, full bridge rectifier.</p>
 
 
 ## 5. Performance Parameters
