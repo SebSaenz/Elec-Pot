@@ -84,8 +84,29 @@ The freewheeling, or flyback diode, is used across inductive loads to:
 
 To design a rectifier circuit, we first need to determine the type of rectifier (single-phase or three-phase, controlled or uncontrolled) and the arrangement of the diodes. Here is an example:
 
--Single-phase full-wave rectifier circuit in LTSpice:
+- Single-phase full-wave rectifier circuit in LTSpice:
 ![Imagen 5](Images/5.jpg)
+<p align="center"><b>Fig. 5.</b> LTSpice simulation diagram for a single-phase rectifier using 1N1186 diodes.</p>
+
+- Rectified signal (green) vs original signal (blue)
+![Imagen 6](Images/6.png)
+<p align="center"><b>Fig. 6.</b> Shows how the rectified signal eliminates the negative parts, becoming a unidirectional pulsating current signal.</p>
+
+- Phase of a half-wave rectifier (Red)
+![Imagen 7](Images/7.png)
+<p align="center"><b>Fig. 7.</b> Shows the signal covered by the original.</p>
+
+- Better visualization of the complete input signal
+![Imagen 8](Images/8.png)
+<p align="center"><b>Fig. 8.</b> Complete signal of the input signal.</p>
+
+- RMS value and average value
+![Imagen 9](Images/9.png)
+<p align="center"><b>Fig. 9.</b> Press art gr on the signal to display the box.</p>
+
+- The power signal (red)
+![Imagen 10](Images/10.png)
+<p align="center"><b>Fig. 10.</p>
 ---
 
 ## References
