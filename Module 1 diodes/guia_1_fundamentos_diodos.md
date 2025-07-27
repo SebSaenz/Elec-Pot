@@ -9,7 +9,8 @@ Power diodes are semiconductor devices designed for high-voltage and high-curren
 - **Reverse Recovery:** A key parameter is the reverse recovery time ($$t_{rr}$$), crucial for switching losses and frequency suitability.
 - **Package Types:** Common formats include stud-mounted and disc packages, optimized for power dissipation.
 
-![Curva característica del diodo](Images/Curva diodo.jpg)
+![Curva característica del diodo](Images/Curva%20diodo.jpg)
+
 
 ## 2. Types of Power Diodes
 
