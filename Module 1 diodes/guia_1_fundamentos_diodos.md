@@ -80,6 +80,12 @@ The freewheeling, or flyback diode, is used across inductive loads to:
 - **Protection:** Include freewheeling diodes, fuses, and snubbers as needed.
 - **Parameter Calculation:** Analyze circuit waveforms and calculate average voltage/current, rms values, and ripple.
 
+### 6.1 Designing a rectifier circuit
+
+To design a rectifier circuit, we first need to determine the type of rectifier (single-phase or three-phase, controlled or uncontrolled) and the arrangement of the diodes. Here is an example:
+
+-Single-phase full-wave rectifier circuit in LTSpice:
+![Imagen 5](Images/5.jpg)
 ---
 
 ## References
