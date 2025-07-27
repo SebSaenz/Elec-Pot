@@ -22,7 +22,7 @@ Estudiantes:
 
 | Módulo | Tema                                      | Enlace                                     |
 | ------ | ----------------------------------------- | ------------------------------------------ |
-| 1      | Fundamentos y Diodos de Potencia          | [Module 1: Diodes](Module%201%20diodes/guia_1_fundamentos_diodos.md) |     
+| 1      | Fundamentals and power diodes          | [Module 1: Diodes](Module%201%20diodes/guia_1_fundamentos_diodos.md) |     
 
 ## Herramientas utilizadas
 
@@ -31,10 +31,7 @@ Estudiantes:
 - VS Code
 - Markdown
 - Python 
-   $$
-    \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
-    $$
-
+   
 $$
 \int_0^\infty \frac{x^3}{e^x - 1} \, dx = \frac{\pi^4}{15}
 $$
