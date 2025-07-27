@@ -22,7 +22,7 @@ Estudiantes:
 
 | Módulo | Tema                                      | Enlace                                     |
 | ------ | ----------------------------------------- | ------------------------------------------ |
-| 1      | Fundamentos y Diodos de Potencia          | [Module 1: Diodes](Module%201%20diodes/ggfgfgfgfgfgfguia_1_fundamentos_diodos.md) |     
+| 1      | Fundamentos y Diodos de Potencia          | [Module 1: Diodes](Module%201%20diodes/guia_1_fundamentos_diodos.md) |     
 
 ## Herramientas utilizadas
 
