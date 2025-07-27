@@ -32,12 +32,18 @@ The freewheeling, or flyback diode, is used across inductive loads to:
 - Protect switching devices from transients.
 - Smooth output currents, especially important in supplies for DC motors and RL loads.
 
+![Diodo Freewheeling o Flyback](Images/Freewheeling%20diodo.jpg)
+
+
 ## 4. Diode Rectifiers
 
 ### 4.1 Single-Phase Full-Wave Rectifier
 
 - **Bridge Rectifier:** Uses four diodes; delivers full-wave DC from AC; output voltage $$V_{DC} ≈ 0.636·V_{m}$$.
 - **Center-Tapped Rectifier:** Uses two diodes and a transformer with a center tap.
+
+![Rectificador de onda completa](Images/Rectificador%20onda%20completa.jpg)
+
 
 ### 4.2 Three-Phase Rectifiers
 
@@ -48,6 +54,9 @@ The freewheeling, or flyback diode, is used across inductive loads to:
 |--------------------------|-------------|--------------|------------------------------|
 | Single-Phase Full-Wave   | 4           | ~0.48        | Low/medium power supplies     |
 | Three-Phase Bridge       | 6           | ~0.05        | High-power, industrial drives |
+
+![Rectificador trifásico](Images/Trifasico.jpg)
+
 
 ## 5. Performance Parameters
 
