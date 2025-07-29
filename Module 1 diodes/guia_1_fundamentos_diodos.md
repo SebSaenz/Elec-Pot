@@ -10,7 +10,8 @@ Power diodes are semiconductor devices designed for high-voltage and high-curren
 - **Package Types:** Common formats include stud-mounted and disc packages, optimized for power dissipation.
 
 ![Curva característica del diodo](Images/Curva%20diodo.jpg)
-<p align="center"><b>Fig. 1.</b> (I-V) characteristic of a diode.</p>
+<p align="center"><b>Fig. 1.</b> (I-V) characteristic of a diode
+Image extracted from: Rashid, M. H. (2014). Power Electronics: Devices, Circuits, and Applications (4th ed.). Pearson Education..</p>
 
 
 ## 2. Types of Power Diodes
@@ -34,7 +35,8 @@ The freewheeling, or flyback diode, is used across inductive loads to:
 - Smooth output currents, especially important in supplies for DC motors and RL loads.
 
 ![Diodo Freewheeling o Flyback](Images/Freewheeling%20diodo.jpg)
-<p align="center"><b>Fig. 2.</b> Basic Step-Down (Buck) Converter Circuit with Low-Pass Filter and Freewheeling Diode.</p>
+<p align="center"><b>Fig. 2.</b> Basic Step-Down (Buck) Converter Circuit with Low-Pass Filter and Freewheeling Diode
+Image extracted from: Mohan, N., Undeland, T. M., & Robbins, W. P. (2003). Power Electronics: Converters, Applications, and Design (3rd ed.). John Wiley & Sons..</p>
 
 
 ## 4. Diode Rectifiers
