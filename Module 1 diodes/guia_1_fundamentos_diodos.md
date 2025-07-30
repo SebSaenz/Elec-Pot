@@ -89,7 +89,7 @@ To design a rectifier circuit, we first need to determine the type of rectifier 
 
 - Single-phase full-wave rectifier circuit in LTSpice:
 
-![Imagen 5](Images/5.jpg)
+![Imagen 5](Image/s5.png)
 
 <p align="center"><b>Fig. 5.</b> LTSpice simulation diagram for a single-phase rectifier using 1N1186 diodes.</p>
 
