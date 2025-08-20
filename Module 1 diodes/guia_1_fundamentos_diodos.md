@@ -138,11 +138,11 @@ In the previus circuit use the rectifier without the capacitor component. Now wi
 
 - Original signal(green) vs filtered signal (blue)
   ![Imagen 13](Images/13.png)
-<p align="center"><b>Fig. 13</b></p>
+<p align="center"><b>Fig. 13 graph resulting from the simulation circuit</p>
 
 - Measurement reasult in the two nodes
 ![Imagen 14](Images/14.png)
-<p align="center"><b>Fig. 14</b></p>
+<p align="center"><b>Fig. 14 measurement result: DC voltage rms, ripple, input voltage rms, output DC voltage.</p>
 
 ## References
 
