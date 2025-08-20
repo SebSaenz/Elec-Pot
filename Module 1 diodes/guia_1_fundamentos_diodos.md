@@ -144,6 +144,10 @@ In the previus circuit use the rectifier without the capacitor component. Now wi
 ![Imagen 14](Images/14.png)
 <p align="center"><b>Fig. 14 measurement result: DC voltage rms, ripple, input voltage rms, output DC voltage.</p>
 
+Finally, we will show a short video explaining the circuit with all participants.
+
+[![Image alt text](https://img.youtube.com/vi/_kywjhLe_sc/0.jpg)](https://www.youtube.com/watch?v=_kywjhLe_sc)
+
 ## References
 
 1. Rashid, M. H. *Power Electronics: Devices, Circuits, and Applications*. Pearson.
