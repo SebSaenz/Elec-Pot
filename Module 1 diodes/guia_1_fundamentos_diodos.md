@@ -122,7 +122,7 @@ To design a rectifier circuit, we first need to determine the type of rectifier 
 ![Imagen 10](Images/10.png)
 
 <p align="center"><b>Fig. 10.</p>
----
+
 
 ### 6.2 Designing a rectifier circuit with capacitor
 
@@ -134,9 +134,15 @@ In the previus circuit use the rectifier without the capacitor component. Now wi
 - In LTSpice we can use Directive (.) to take measures in the circuit. We use 4 nodes for 4 measures:
   
 ![Imagen 12](Images/12.png)
-<p align="center"><b>Fig. 10 measurements on: DC voltage rms, ripple, input voltage rms, output DC voltage.</p>
+<p align="center"><b>Fig. 12 measurements on: DC voltage rms, ripple, input voltage rms, output DC voltage.</p>
 
+- Original signal(green) vs filtered signal (blue)
+  ![Imagen 13](Images/13.png)
+<p align="center"><b>Fig. 13</b></p>
 
+- Measurement reasult in the two nodes
+![Imagen 14](Images/14.png)
+<p align="center"><b>Fig. 14</b></p>
 
 ## References
 
