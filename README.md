@@ -20,7 +20,7 @@ Estudiantes:
 
 ## Contenido
 
-| Módulo | Tema                                      | Enlace                                     |
+| Módulo | Tema                                      | Enlaces                                     |
 | ------ | ----------------------------------------- | ------------------------------------------ |
 | 1      | Fundamentos y Diodos de Potencia          | [Ver Guía](./guia_1_fundamentos_diodos.md) (https://youtu.be/_kywjhLe_sc) |
 | 2      | Rectificadores No Controlados             | [Ver Guía](./guia_2_rectificadores)        |
