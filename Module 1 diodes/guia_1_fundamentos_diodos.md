@@ -124,6 +124,14 @@ To design a rectifier circuit, we first need to determine the type of rectifier 
 <p align="center"><b>Fig. 10.</p>
 ---
 
+### 6.2 Designing a rectifier circuit with capacitor
+
+In the previus circuit use the rectifier without the capacitor component. Now with the capacitor we can filter to soften the signal, using large capacitor with smal one for protetion in the real case.
+
+![Imagen 11](Images/11.png)
+
+<p align="center"><b>Fig. 11.</b> The circuit rectifier with capacitors.</p>
+
 ## References
 
 1. Rashid, M. H. *Power Electronics: Devices, Circuits, and Applications*. Pearson.
