@@ -129,8 +129,14 @@ To design a rectifier circuit, we first need to determine the type of rectifier 
 In the previus circuit use the rectifier without the capacitor component. Now with the capacitor we can filter to soften the signal, using large capacitor with smal one for protetion in the real case.
 
 ![Imagen 11](Images/11.png)
-
 <p align="center"><b>Fig. 11.</b> The circuit rectifier with capacitors.</p>
+
+- In LTSpice we can use Directive (.) to take measures in the circuit. We use 4 nodes for 4 measures:
+  
+![Imagen 12](Images/12.png)
+<p align="center"><b>Fig. 10 measurements on: DC voltage rms, ripple, input voltage rms, output DC voltage.</p>
+
+
 
 ## References
 
