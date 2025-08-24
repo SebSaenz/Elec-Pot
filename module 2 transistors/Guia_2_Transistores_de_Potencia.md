@@ -6,7 +6,6 @@
 
 -Bipolar junction transistors (BJTs)
 
--Insulated-gate bipolar transistors (IJBTs)
 
 ## Power MOSFET
   ![Imagen 1](Images/1.jpeg)
