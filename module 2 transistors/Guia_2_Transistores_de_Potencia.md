@@ -16,9 +16,11 @@
 <p align="center"><b>Fig. 2</p>
 
 ## Junction Field-Effect Transistors (JFETs)
+  ![Imagen 2](Images/4.png)
+<p align="center"><b>Fig. 3</p>
 
 ## Bipolar Junction Transistors (BJTs)
 
   ![Imagen 3](Images/3.jpeg)
-<p align="center"><b>Fig. 3?</p>
+<p align="center"><b>Fig. 4</p>
 
