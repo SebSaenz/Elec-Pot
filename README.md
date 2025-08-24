@@ -38,4 +38,5 @@ Estudiantes:
 - VS Code
 - Markdown
 - Python 
+- Obsidian
    
