@@ -9,7 +9,7 @@ Power transistors offer controlled switching capabilities (both turn-on and turn
 -Bipolar junction transistors (BJTs)
 
 MOSFETs, BJTs, IGBTs can be assumed as ideal switches to explain the power conversion techniques. A transistor can be operated as a switch.
-
+However, the choice between a BJT and an MOSFET in the converter circuits is not obvious, but each of them can replace a switch, provided that its voltage and current ratings meet the output requirements of the converter.
 ## Power MOSFET
   ![Imagen 1](Images/1.jpeg)
 <p align="center"><b>Fig. 1</p>
