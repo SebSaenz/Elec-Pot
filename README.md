@@ -33,6 +33,7 @@ Estudiantes:
 ## Herramientas utilizadas
 
 - LTSpice
+- QSPICE
 - Github desktop
 - VS Code
 - Markdown
