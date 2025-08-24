@@ -24,7 +24,7 @@ Estudiantes:
 | ------ | ----------------------------------------- | ------------------------------------------ |
 | 1      | Fundamentos y Diodos de Potencia          | [Ver Guía](./guia_1_fundamentos_diodos.md) (https://youtu.be/_kywjhLe_sc) |
 | 2      | Rectificadores No Controlados             | [Ver Guía](./guia_2_rectificadores)        |
-| 3      | Transistores de Potencia                  | [Ver Guía](./guia_3_transistores_potencia) |
+| 3      | Transistores de Potencia                  | [Ver Guía](./guia_3_transistores_potencia.md) |
 | 4      | Convertidores DC-DC                       | [Ver Guía](./guia_4_convertidores_dc_dc)   |
 | 5      | Tiristores y Control de Potencia          | [Ver Guía](./guia_5_tiristores)            |
 | 6      | Proyecto Final – Inversor para Sistema PV | [Ver Guía](./guia_6_proyecto_final)        |
