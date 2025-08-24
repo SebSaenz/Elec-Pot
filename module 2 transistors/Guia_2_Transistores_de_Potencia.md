@@ -1,11 +1,14 @@
 ## Module 2: Power Transistor
 
+Power transistors offer controlled switching capabilities (both turn-on and turn-off) and operate in the saturation region as switching elements, providing low on-state voltage drops. They feature much faster switching speeds compared to thyristors and are widely used in DC-DC and DC-AC converters, typically paired with inverse parallel-connected diodes for bidirectional current flow.
+
 -Junction field-effect transistors (JFETs)
 
 -Metal oxide silicon field-effect transistors (MOSFETs)
 
 -Bipolar junction transistors (BJTs)
 
+MOSFETs, BJTs, IGBTs can be assumed as ideal switches to explain the power conversion techniques. A transistor can be operated as a switch.
 
 ## Power MOSFET
   ![Imagen 1](Images/1.jpeg)
