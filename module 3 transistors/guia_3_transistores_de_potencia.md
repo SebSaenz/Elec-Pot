@@ -26,37 +26,16 @@ They are characterized by their **high switching speed** and **low on-state resi
 *Rashid, M. H. (2014). Power Electronics: Devices, Circuits, and Applications (4th ed.), Fig. 4.2, Pearson.*
 
 **Key equations (typical large-signal model):**
-
-- **Saturation region (a.k.a. constant-current region):**
-  
-  $$
-  I_D = k \, (V_{GS} - V_{th})^2 \quad \text{for } V_{DS} \ge V_{GS}-V_{th}
-  $$
-
-- **Triode/ohmic region:**
-  
-  $$
-  I_D = k \,\Big[(V_{GS}-V_{th})\,V_{DS} - \tfrac{1}{2}V_{DS}^{2}\Big] 
-  \quad \text{for } V_{DS} < V_{GS}-V_{th}
-  $$
-
-- **Conduction loss (approx.):**
-  
-  $$
-  P_{\text{cond}} \approx I_{\text{rms}}^{2}\, R_{\mathrm{DS(on)}}
-  $$
-
-- **Switching loss (per cycle):**
-  
-  $$
-  P_{\text{sw}} \approx f_{s}\,(E_{\text{on}}+E_{\text{off}})
-  $$
-
-- **Gate-drive power (useful in practice):**
-  
-  $$
-  P_{\text{gate}} \approx Q_{g}\,V_{GS}\,f_{s}
-  $$
+- **Saturation (constant-current) region:**  
+  $I_D = k\,(V_{GS}-V_{th})^{2}$, valid for $V_{DS} \ge V_{GS}-V_{th}$.
+- **Triode/ohmic region:**  
+  $I_D = k\!\left[(V_{GS}-V_{th})\,V_{DS}-\tfrac{1}{2}V_{DS}^{2}\right]$, valid for $V_{DS} < V_{GS}-V_{th}$.
+- **Conduction loss (approx.):**  
+  $P_{\text{cond}} \approx I_{\text{rms}}^{2}\,R_{\mathrm{DS(on)}}$.
+- **Switching loss (per cycle):**  
+  $P_{\text{sw}} \approx f_{s}\,(E_{\text{on}}+E_{\text{off}})$.
+- **Gate-drive power (practical):**  
+  $P_{\text{gate}} \approx Q_{g}\,V_{GS}\,f_{s}$.
 
 ---
 
@@ -76,17 +55,9 @@ Its main advantages are **high input impedance** and **low noise**, although it 
 **BJTs** are current-controlled devices.  
 They can handle high current levels but have slower switching times compared to MOSFETs.
 
-**Basic operation:**
+**Basic operation:** $I_C = \beta\,I_B$  
 
-$$
-I_C = \beta\, I_B
-$$
-
-**Power dissipation (switch in conduction):**
-
-$$
-P \approx V_{CE(\text{sat})}\, I_C
-$$
+**Power dissipation (switch in conduction):** $P \approx V_{CE(\text{sat})}\,I_C$
 
 ![BJT](Images/3.jpeg)  
 **Figure 4.** Structure and symbols of NPN and PNP BJTs.  
@@ -110,12 +81,7 @@ $$
 
 - **Maximum voltage rating** ($V_{DS,\max}$, $V_{CE,\max}$)  
 - **Maximum current** ($I_D$, $I_C$)  
-- **Total power losses:**
-
-  $$
-  P_{\text{total}} = P_{\text{cond}} + P_{\text{sw}}
-  $$
-
+- **Total power losses:** $P_{\text{total}} = P_{\text{cond}} + P_{\text{sw}}$  
 - **Switching times** (turn-on, turn-off)  
 - **SOA (Safe Operating Area)**  
 - **Thermal resistance** and heat dissipation  
