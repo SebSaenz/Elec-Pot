@@ -1,31 +1,31 @@
-# Transistores de Potencia
+# Power Transistors
 
-Los transistores de potencia permiten el conmutado controlado de señales eléctricas en aplicaciones de alta corriente y voltaje.  
-Se utilizan ampliamente en convertidores **DC-DC**, **DC-AC** e inversores, y siempre acompañados de diodos en antiparalelo para permitir flujo bidireccional de corriente.
+Power transistors enable controlled switching of electrical signals in high-current and high-voltage applications.  
+They are widely used in **DC-DC** and **DC-AC** converters, usually paired with antiparallel diodes to allow bidirectional current flow.
 
-Existen tres familias principales:
+The three main families are:
 - **MOSFETs (Metal-Oxide-Semiconductor Field-Effect Transistors)**
 - **JFETs (Junction Field-Effect Transistors)**
 - **BJTs (Bipolar Junction Transistors)**
 
 ---
 
-## 1. MOSFET de Potencia
+## 1. Power MOSFET
 
-Los **MOSFETs** son dispositivos controlados por tensión en la compuerta.  
-Se caracterizan por su **alta velocidad de conmutación** y **baja resistencia en conducción (R_DS(on))**, lo que los hace muy eficientes en aplicaciones de alta frecuencia como fuentes conmutadas y convertidores DC-DC.
+**MOSFETs** are voltage-controlled devices.  
+They are characterized by their **high switching speed** and **low on-state resistance (R_DS(on))**, which makes them very efficient in high-frequency applications such as switched-mode power supplies and DC-DC converters.
 
-### 1.1 MOSFET tipo Depleción
-![MOSFET Depleción](1.jpeg)  
-**Figura 1.** Estructura y símbolo de MOSFET tipo depleción.  
+### 1.1 Depletion-Type MOSFET
+![MOSFET Depletion](Images/1.jpeg)  
+**Figure 1.** Structure and symbol of depletion-type MOSFET.  
 📖 *Rashid, M. H. (2014). Power Electronics: Devices, Circuits, and Applications (4th ed.), Fig. 4.1, Pearson.*
 
-### 1.2 MOSFET tipo Enriquecimiento
-![MOSFET Enriquecimiento](2.jpeg)  
-**Figura 2.** Estructura y símbolo de MOSFET tipo enriquecimiento.  
+### 1.2 Enhancement-Type MOSFET
+![MOSFET Enhancement](Images/2.jpeg)  
+**Figure 2.** Structure and symbol of enhancement-type MOSFET.  
 📖 *Rashid, M. H. (2014). Power Electronics: Devices, Circuits, and Applications (4th ed.), Fig. 4.2, Pearson.*
 
-La ecuación de conducción en la región de saturación es:
+The drain current in saturation mode is given by:
 
 \[
 I_D = k \cdot (V_{GS} - V_{th})^2
@@ -33,92 +33,90 @@ I_D = k \cdot (V_{GS} - V_{th})^2
 
 ---
 
-## 2. JFET (Junction Field-Effect Transistors)
+## 2. Junction Field-Effect Transistor (JFET)
 
-El **JFET** es un transistor de efecto de campo en el que el canal se controla mediante una unión pn.  
-Su principal ventaja es la **alta impedancia de entrada** y bajo ruido, aunque en aplicaciones de potencia es menos común que el MOSFET.
+The **JFET** is a field-effect transistor in which the channel is controlled by a pn junction.  
+Its main advantages are **high input impedance** and **low noise**, although it is less common in power applications compared to MOSFETs.
 
-![JFET](4.png)  
-**Figura 3.** Estructura y símbolo de un JFET.  
-📖 *Hart, D. W. (2011). Power Electronics. Prentice Hall. Cap. 2, sección de dispositivos de control.*
+![JFET](Images/4.png)  
+**Figure 3.** Structure and symbol of a JFET.  
+📖 *Hart, D. W. (2011). Power Electronics. Prentice Hall. Chapter 2.*
 
 ---
 
-## 3. BJT (Bipolar Junction Transistors)
+## 3. Bipolar Junction Transistors (BJTs)
 
-El **BJT de potencia** es un dispositivo controlado por corriente en la base.  
-Permite manejar corrientes elevadas, pero su tiempo de conmutación es mayor que el de los MOSFET.  
+**BJTs** are current-controlled devices.  
+They can handle high current levels but have slower switching times compared to MOSFETs.  
 
-Relación básica de operación:
+Basic operation:
 
 \[
 I_C = \beta I_B
 \]
 
-y la potencia disipada:
+Power dissipation:
 
 \[
 P = V_{CE} \cdot I_C
 \]
 
-![BJT](3.jpeg)  
-**Figura 4.** Estructura y símbolo de BJT tipo NPN y PNP.  
-📖 *Mohan, N., Undeland, T. M., & Robbins, W. P. (2003). Power Electronics: Converters, Applications, and Design (3rd ed.), Cap. 5, McGraw-Hill.*
+![BJT](Images/3.jpeg)  
+**Figure 4.** Structure and symbols of NPN and PNP BJTs.  
+📖 *Mohan, N., Undeland, T. M., & Robbins, W. P. (2003). Power Electronics: Converters, Applications, and Design (3rd ed.), Chapter 5, McGraw-Hill.*
 
 ---
 
-## 4. Comparación de Transistores de Potencia
+## 4. Comparison of Power Transistors
 
-| Tipo     | Ventajas                           | Desventajas                        | Aplicaciones |
-|----------|-----------------------------------|------------------------------------|--------------|
-| MOSFET   | Alta velocidad, baja R_DS(on)     | Limitado en muy altas potencias     | Convertidores DC-DC, fuentes conmutadas |
-| BJT      | Manejo de corrientes altas        | Conmutación lenta, control por IB   | Amplificadores, inversores de baja frecuencia |
-| IGBT     | Combina ventajas de MOSFET y BJT  | Más lentos que MOSFET, más costosos | Variadores de motores, energías renovables |
+| Type   | Advantages                        | Disadvantages                     | Applications |
+|--------|----------------------------------|-----------------------------------|--------------|
+| MOSFET | High speed, low R_DS(on)         | Limited at very high power levels | DC-DC converters, SMPS |
+| BJT    | High current handling capability | Slow switching, current-driven    | Amplifiers, low-frequency inverters |
+| IGBT   | Combines MOSFET + BJT benefits   | Slower than MOSFET, more costly   | Motor drives, renewable energy inverters |
 
 📖 *Erickson, R. W., & Maksimovic, D. (2001). Fundamentals of Power Electronics. Springer.*
 
 ---
 
-## 5. Parámetros de Desempeño
+## 5. Key Performance Parameters
 
-- **Tensión máxima soportada** (\(V_{DSmax}, V_{CEmax}\))  
-- **Corriente máxima** (\(I_D, I_C\))  
-- **Pérdidas de potencia**:  
+- **Maximum voltage rating** (\(V_{DSmax}, V_{CEmax}\))  
+- **Maximum current** (\(I_D, I_C\))  
+- **Power losses**:  
   \[
   P_{total} = P_{cond} + P_{sw}
   \]  
-- **Tiempo de conmutación** (turn-on, turn-off)  
-- **SOA (Safe Operating Area)**: región de operación segura  
-- **Resistencia térmica** y disipación de calor  
+- **Switching time** (turn-on, turn-off)  
+- **SOA (Safe Operating Area)**  
+- **Thermal resistance** and heat dissipation  
 
 ---
 
-## 6. Conclusiones
+## 6. Conclusions
 
-- Los transistores de potencia son la **base de la conversión moderna de energía**.  
-- La elección depende de la aplicación:  
-  - Alta frecuencia → **MOSFET**  
-  - Alta corriente → **BJT**  
-  - Media/alta potencia → **IGBT**  
-
----
-
-# Preguntas adicionales
-
-### ¿Cuál transistor se usa más y por qué?
-El **MOSFET de potencia** es el más utilizado actualmente en fuentes conmutadas, convertidores DC-DC y aplicaciones de alta frecuencia, debido a:  
-- Alta velocidad de conmutación.  
-- Bajo consumo en la compuerta (control por voltaje, no por corriente).  
-- Menor disipación de potencia en conducción.  
-
-El **IGBT** también es muy usado, pero en aplicaciones industriales de potencia más alta (motores, tracción eléctrica).  
+- Power transistors are the **foundation of modern power conversion systems**.  
+- Device choice depends on application:  
+  - High frequency → **MOSFET**  
+  - High current → **BJT**  
+  - Medium/high power → **IGBT**  
 
 ---
 
-### ¿Qué configuración se usa más, emisor común o base común?
-La **configuración de emisor común** es la más utilizada porque:  
-- Proporciona **alta ganancia de corriente y voltaje**.  
-- Se adapta mejor como **amplificador** y como **interruptor de potencia**.  
-- Tiene una respuesta más versátil que la base común, que se usa en casos muy específicos (como etapas de adaptación de impedancia).  
+# Additional Questions
+
+### Which transistor is used the most and why?
+The **MOSFET** is the most widely used transistor today in switched-mode power supplies, DC-DC converters, and high-frequency electronics.  
+This is because of its **high switching speed, low conduction losses, and voltage-controlled operation** (no need for base current as in BJTs).  
+
+**IGBTs** are also common, but mainly in **industrial high-power systems** such as motor drives and renewable energy converters.  
+
+---
+
+### Which configuration is used the most: common-emitter or common-base?
+The **common-emitter configuration** is the most widely used because:  
+- It provides **high current and voltage gain**.  
+- It is suitable for both **amplification** and **switching applications**.  
+- Common-base configuration is only used in specialized cases (impedance matching, RF applications).  
 
 ---
