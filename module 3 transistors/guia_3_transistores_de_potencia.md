@@ -3,27 +3,26 @@
 Power transistors enable controlled switching of electrical signals in high-current and high-voltage applications.  
 They are widely used in **DC-DC** and **DC-AC** converters, usually paired with antiparallel diodes to allow bidirectional current flow.
 
-The three main families are:
+The two main families studied here are:
 - **MOSFETs (Metal-Oxide-Semiconductor Field-Effect Transistors)**
-- **JFETs (Junction Field-Effect Transistors)**
 - **BJTs (Bipolar Junction Transistors)**
 
 ---
 
 ## 1. Power MOSFET
 
-**MOSFETs** are voltage-controlled devices.  
+**MOSFETs** are voltage-controlled devices [1].  
 They are characterized by their **high switching speed** and **low on-state resistance** ($R_{\mathrm{DS(on)}}$), which makes them very efficient in high-frequency applications such as switched-mode power supplies and DC-DC converters.
 
 ### 1.1 Depletion-Type MOSFET
 ![MOSFET Depletion](Images/1.jpeg)  
 **Figure 1.** Structure and symbol of depletion-type MOSFET.  
-*Rashid, M. H. (2014). Power Electronics: Devices, Circuits, and Applications (4th ed.), Fig. 4.1, Pearson.*
+From Rashid (2014) [1].
 
 ### 1.2 Enhancement-Type MOSFET
 ![MOSFET Enhancement](Images/2.jpeg)  
 **Figure 2.** Structure and symbol of enhancement-type MOSFET.  
-*Rashid, M. H. (2014). Power Electronics: Devices, Circuits, and Applications (4th ed.), Fig. 4.2, Pearson.*
+From Rashid (2014) [1].
 
 **Key equations (typical large-signal model):**
 - **Saturation (constant-current) region:**  
@@ -39,45 +38,33 @@ They are characterized by their **high switching speed** and **low on-state resi
 
 ---
 
-## 2. Junction Field-Effect Transistor (JFET)
+## 2. Bipolar Junction Transistors (BJTs)
 
-The **JFET** is a field-effect transistor in which the channel is controlled by a pn junction.  
-Its main advantages are **high input impedance** and **low noise**, although it is less common in power applications compared to MOSFETs.
-
-![JFET](Images/4.png)  
-**Figure 3.** Structure and symbol of a JFET.  
-*Hart, D. W. (2011). Power Electronics. Prentice Hall. Chapter 2.*
-
----
-
-## 3. Bipolar Junction Transistors (BJTs)
-
-**BJTs** are current-controlled devices.  
+**BJTs** are current-controlled devices [2].  
 They can handle high current levels but have slower switching times compared to MOSFETs.
 
-**Basic operation:** $I_C = \beta\,I_B$  
+**Basic operation:** $I_C = \beta\, I_B$  
 
 **Power dissipation (switch in conduction):** $P \approx V_{CE(\text{sat})}\,I_C$
 
 ![BJT](Images/3.jpeg)  
-**Figure 4.** Structure and symbols of NPN and PNP BJTs.  
-*Mohan, N., Undeland, T. M., & Robbins, W. P. (2003). Power Electronics: Converters, Applications, and Design (3rd ed.), Chapter 5, McGraw-Hill.*
+**Figure 3.** Structure and symbols of NPN and PNP BJTs.  
+From Mohan et al. (2003) [2].
 
 ---
 
-## 4. Comparison of Power Transistors
+## 3. Comparison of MOSFET and BJT
 
 | Type   | Advantages                             | Disadvantages                          | Typical Applications |
 |--------|----------------------------------------|----------------------------------------|---------------------|
 | MOSFET | High speed, low $R_{\mathrm{DS(on)}}$  | Limited at very high power levels      | DC-DC converters, SMPS |
 | BJT    | High current handling capability       | Slower switching, current-driven base  | Amplifiers, low-frequency inverters |
-| IGBT   | Combines MOSFET + BJT benefits         | Slower than MOSFET, higher cost        | Motor drives, renewable energy inverters |
 
-*Erickson, R. W., & Maksimovic, D. (2001). Fundamentals of Power Electronics. Springer.*
+From Erickson & Maksimovic (2001) [3].
 
 ---
 
-## 5. Key Performance Parameters
+## 4. Key Performance Parameters
 
 - **Maximum voltage rating** ($V_{DS,\max}$, $V_{CE,\max}$)  
 - **Maximum current** ($I_D$, $I_C$)  
@@ -88,30 +75,28 @@ They can handle high current levels but have slower switching times compared to 
 
 ---
 
-## 6. Conclusions
+## 5. Conclusions
 
-- Power transistors are the **foundation of modern power conversion systems**.  
-- Device choice depends on application:
-  - **High frequency** → MOSFET  
-  - **High current** → BJT  
-  - **Medium/high power** → IGBT  
+- MOSFETs dominate **high-frequency and low/medium-power** applications due to their fast switching and low conduction losses.  
+- BJTs are still useful in **high-current, low-frequency** applications.  
+- The choice between MOSFET and BJT depends on switching frequency and power requirements.  
 
 ---
 
 # Additional Questions
 
 ### Which transistor is used the most and why?
-The **MOSFET** is the most widely used transistor today in switched-mode power supplies, DC-DC converters, and high-frequency electronics.  
+The **MOSFET** is the most widely used transistor today in switched-mode power supplies, DC-DC converters, and high-frequency electronics [1].  
 It dominates because of its **high switching speed**, **low conduction losses** ($R_{\mathrm{DS(on)}}$), and **voltage-controlled gate** (no continuous drive current as in BJTs).  
-**IGBTs** are also very common—but mainly in **industrial high-power** systems such as motor drives and renewable-energy inverters.
 
 ### Which configuration is used the most: common-emitter or common-base?
-The **common-emitter** configuration is used far more often because it provides **high current and voltage gain** and works well for both **amplification** and **power switching**.  
+The **common-emitter** configuration is used far more often [2][3] because it provides **high current and voltage gain** and works well for both **amplification** and **power switching**.  
 The **common-base** configuration is reserved for niche cases (e.g., RF or impedance-matching stages).
 
 ---
 
-## Figure Sources
-- **Fig. 1–2 (MOSFETs):** Rashid, *Power Electronics: Devices, Circuits, and Applications*, 4th ed., Pearson — **Fig. 4.1** and **Fig. 4.2**.  
-- **Fig. 3 (JFET):** Hart, *Power Electronics*, Prentice Hall — Chapter 2 (JFET section).  
-- **Fig. 4 (BJTs):** Mohan, Undeland & Robbins, *Power Electronics: Converters, Applications, and Design*, 3rd ed., McGraw-Hill — Chapter 5 (BJT figures).
+# References
+
+[1] Rashid, M. H. (2014). *Power Electronics: Devices, Circuits, and Applications* (4th ed.). Pearson.  
+[2] Mohan, N., Undeland, T. M., & Robbins, W. P. (2003). *Power Electronics: Converters, Applications, and Design* (3rd ed.). McGraw-Hill.  
+[3] Erickson, R. W., & Maksimovic, D. (2001). *Fundamentals of Power Electronics*. Springer.
