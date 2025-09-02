@@ -75,7 +75,18 @@ From Erickson & Maksimovic (2001) [3].
 
 ---
 
-## 5. Conclusions
+## 5. Simulation
+![circuit](Images/5.jpg)  
+
+![simulation](Images/6.jpg)  
+
+![circuit](Images/7.jpg)  
+
+![simulation](Images/8.jpg)  
+
+---
+
+## 6. Conclusions
 
 - MOSFETs dominate **high-frequency and low/medium-power** applications due to their fast switching and low conduction losses.  
 - BJTs are still useful in **high-current, low-frequency** applications.  
