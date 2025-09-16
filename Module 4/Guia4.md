@@ -24,7 +24,7 @@ The Buck converter delivers to the load a voltage **lower** than the input volta
 
 ---
 
-**Components:**
+### 2.3 Components
 
 - `Vin` (**Vs**): input voltage source  
 - `SW` (**S1**): controlled switch (MOSFET, IGBT, or transistor)  
@@ -37,65 +37,59 @@ The Buck converter delivers to the load a voltage **lower** than the input volta
 
 ---
 
-### 2.3 Operating Principle
+### 2.4 Operating Principle
 
 The Buck converter operates in two main intervals (Continuous Conduction Mode, CCM):
 
-1. **Switch ON**: the source transfers energy to the inductor and the load.  
-2. **Switch OFF**: the inductor supplies current to the load through the diode.
+1. **Switch ON:** the source transfers energy to the inductor and the load.  
+2. **Switch OFF:** the inductor supplies current to the load through the diode.
 
 In steady state (CCM):
 
-\[
-V_o = D \cdot V_{in}
-\]
+$V_{o} = D \cdot V_{in}$
 
 where:
 
-- \(V_o\): output voltage  
-- \(V_{in}\): input voltage  
-- \(D\): duty cycle (\(D = t_{on}/T\))
+- $V_{o}$: output voltage  
+- $V_{in}$: input voltage  
+- $D$: duty cycle ($D = t_{on} / T$)
 
 ---
 
-### 2.4 Key Equations
+### 2.5 Key Equations (Continuous Conduction Mode)
 
-- **Average inductor current**:
-\[
-I_L = I_o = \frac{V_o}{R}
-\]
+- **Output voltage:**  
+  $V_{o} = D \cdot V_{in}$
 
-- **Inductor current ripple**:
-\[
-\Delta I_L = \frac{(V_{in}-V_o) \cdot D}{L \cdot f_s}
-\]
+- **Average inductor current:**  
+  $I_{L} = I_{o} = \dfrac{V_{o}}{R}$
 
-- **Output voltage ripple**:
-\[
-\Delta V_o = \frac{\Delta I_L}{8 f_s C}
-\]
+- **Inductor current ripple:**  
+  $\Delta I_{L} = \dfrac{(V_{in} - V_{o})\,D}{L\,f_{s}}$
 
-> \(f_s\): switching frequency
+- **Output voltage ripple:**  
+  $\Delta V_{o} = \dfrac{\Delta I_{L}}{8\,f_{s}\,C}$
+
+> $f_{s}$ is the switching frequency.
 
 ---
 
-### 2.5 Basic Design Guidelines
+### 2.6 Basic Design Guidelines
 
 1. Choose the switching frequency according to efficiency and size requirements.  
-2. Select the inductor to limit current ripple (\(\Delta I_L\) ≤ 20–40% of \(I_L\)).  
+2. Select the inductor to limit current ripple ($\Delta I_{L}$ ≤ 20–40% of $I_{L}$).  
 3. Size the output capacitor to keep the voltage ripple within the desired limits.  
 4. Consider conduction, switching, and series resistance losses.
 
 ---
 
-### 2.6 Simulation Example
+### 2.7 Simulation Example
 
 - Configure the circuit in **LTspice** or **Simulink**.  
-- Use: \(V_{in} = 12\;V\), \(V_o = 5\;V\), \(L = 100\;\mu H\), \(C = 100\;\mu F\), \(R = 10\;\Omega\), \(f_s = 50\;kHz\).  
+- Use: $V_{in} = 12\;V$, $V_{o} = 5\;V$, $L = 100\;\mu H$, $C = 100\;\mu F$, $R = 10\;\Omega$, $f_{s} = 50\;kHz$.  
 - Adjust the duty cycle:
-\[
-D = \frac{V_o}{V_{in}} = \frac{5}{12} \approx 0.42
-\]
+
+$D = \dfrac{V_{o}}{V_{in}} = \dfrac{5}{12} \approx 0.42$
 
 ---
 
@@ -105,9 +99,9 @@ The Boost converter increases the output voltage above the input voltage.
 
 ### 3.1 Basic Equation (CCM)
 
-\[
-V_o = \frac{V_{in}}{1 - D}
-\]
+$V_{o} = \dfrac{V_{in}}{1 - D}$
+
+---
 
 ### 3.2 Notes
 
