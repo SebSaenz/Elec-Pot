@@ -16,7 +16,7 @@ They are characterized by their **high switching speed** and **low on-state resi
 
 ### 1.1 Depletion-Type MOSFET
 ![MOSFET Depletion](Images/1.jpeg)  
-<center>**Figure 1.** Structure and symbol of depletion-type MOSFET.</center>  
+**Figure 1.** Structure and symbol of depletion-type MOSFET.
 From Rashid (2014) [1].
 
 ### 1.2 Enhancement-Type MOSFET
