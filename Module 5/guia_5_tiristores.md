@@ -11,7 +11,7 @@ It consists of **four alternating layers of P-type and N-type material (PNPN)**,
 - **Cathode (K):** connected to the outer N layer.  
 - **Gate (G):** linked to the inner region.
 
-![Thyristor structure, equivalent circuit and symbol](assets/img/tiristor2.gif)
+![Thyristor structure, equivalent circuit and symbol]![alt text](tiristor2.gif)
 
 Its behavior is similar to that of a bistable switch:
 
