@@ -112,7 +112,7 @@ $V_{o} = \dfrac{V_{in}}{1 - D}$
 ---
 
 ## 4. Simulation
-
+![DC-DC Convertes](Images/1.jpg)
 ---
 
 ## 5. Conclusions
