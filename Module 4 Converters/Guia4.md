@@ -20,7 +20,7 @@ The Buck converter delivers to the load a voltage **lower** than the input volta
 
 ### 2.2 Topology
 
-![alt text](image/image.png)
+![alt text](Image/image.png)
 
 ---
 
