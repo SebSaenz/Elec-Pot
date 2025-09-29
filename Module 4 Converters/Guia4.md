@@ -116,9 +116,10 @@ $V_{o} = \dfrac{V_{in}}{1 - D}$
 ![DC-DC Convertes](Image/1.jpg)
 ---
 
-Circuit rectifier with DC-DC converter by using the TL431. 
+Circuit rectifier with DC-DC converter by using the TL431.
 
-The component intended for the DC-DC converter include the IRLZ44N MOSFET and the 1N5824 zener diode
+The component intended for the DC-DC converter include the IRLZ44N MOSFET and the 1N5824 zener diode.
+
 ---
 ![LTSimulation](Image/2.png)
 
