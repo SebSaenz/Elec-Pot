@@ -116,7 +116,7 @@ $V_{o} = \dfrac{V_{in}}{1 - D}$
 ![DC-DC Convertes](Image/1.jpg)
 ---
 
-Circuit rectifier with DC-DC converter used the TL431.
+Circuit rectifier with DC-DC converter by using the TL431.
 
 ---
 ## 5. Conclusions
