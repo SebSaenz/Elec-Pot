@@ -77,16 +77,17 @@ From Erickson & Maksimovic (2001) [3].
 
 ## 5. Simulation
 ![circuit](Images/5.jpg)  
-Rectifier circuit with BJT QTIP35c
+Rectifier circuit with BJT 2N2222 and TIP35
 
 ![simulation](Images/6.jpg)  
-Voltage (blue) and current (orange) in R9 Simulation
+voltage out (blue) and current (orange) in R9 simulation
 
 ![circuit](Images/7.jpg)
-Rectifier circuit with BJT 2N2222 and TIP35  
+
+Rectifier circuit with MOSFET  
 
 ![simulation](Images/8.jpg) 
-voltage out (blue) and current (orange) in R9 simulation
+voltage out (green) and current (orange) in R9 simulation
 
 ---
 

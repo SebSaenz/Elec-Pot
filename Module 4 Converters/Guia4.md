@@ -20,7 +20,7 @@ The Buck converter delivers to the load a voltage **lower** than the input volta
 
 ### 2.2 Topology
 
-![alt text](image.png)
+![alt text](Image/image.png)
 
 ---
 
@@ -113,8 +113,12 @@ $V_{o} = \dfrac{V_{in}}{1 - D}$
 
 ## 4. Simulation
 
+![DC-DC Convertes](Image/1.jpg)
 ---
 
+Circuit rectifier with DC-DC converter by using the TL431.
+
+---
 ## 5. Conclusions
 
 - The Buck converter is ideal for applications where the voltage needs to be reduced with high efficiency.  
