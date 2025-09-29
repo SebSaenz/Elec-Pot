@@ -112,9 +112,13 @@ $V_{o} = \dfrac{V_{in}}{1 - D}$
 ---
 
 ## 4. Simulation
-![DC-DC Convertes](Images/1.jpg)
+
+![DC-DC Convertes](Image/1.jpg)
 ---
 
+Circuit rectifier with DC-DC converter used the TL431.
+
+---
 ## 5. Conclusions
 
 - The Buck converter is ideal for applications where the voltage needs to be reduced with high efficiency.  
