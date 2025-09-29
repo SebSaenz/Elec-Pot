@@ -111,14 +111,22 @@ $V_{o} = \dfrac{V_{in}}{1 - D}$
 
 ---
 
-## 4. Conclusions
+## 4. Simulation
+
+![DC-DC Convertes](Image/1.jpg)
+---
+
+Circuit rectifier with DC-DC converter used the TL431.
+
+---
+## 5. Conclusions
 
 - The Buck converter is ideal for applications where the voltage needs to be reduced with high efficiency.  
 - The Boost converter allows voltage increase, though with higher complexity in control and losses.
 
 ---
 
-## 5. References
+## 6. References
 
 - Hart, D. W. (2001). *Power Electronics*. Pearson Education.  
 - Rashid, M. H. (2014). *Power Electronics: Devices, Circuits, and Applications*. Pearson.  
