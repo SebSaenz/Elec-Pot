@@ -75,6 +75,11 @@ The **thyristor (SCR)** is well suited for this system because it allows precise
 
 ---
 
+
+## 4️. Simulation
+
+---
+
 ### References
 - Hart, D. W. (2001). *Power Electronics*. Pearson Education.  
 - Rashid, M. H. (2014). *Power Electronics: Devices, Circuits, and Applications* (4th ed.). Pearson.  
