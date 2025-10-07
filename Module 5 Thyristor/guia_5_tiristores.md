@@ -78,9 +78,9 @@ The **thyristor (SCR)** is well suited for this system because it allows precise
 
 ## 5. Simulation
 
-(Image/1.jpg)
+![](Image/1.jpg)
 
-(Image/2.jpg)
+![](Image/2.jpg)
 
 ---
 
