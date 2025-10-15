@@ -77,6 +77,20 @@ The **thyristor (SCR)** is well suited for this system because it allows precise
 
 
 ## 5. Simulation
+The behavior of the tristors was analyzed in two different simulations.
+
+### LTSPICE
+
+A circuit was developed here consisting of an AC power supply stage (120V60Hz) and transformation (120/12V transformer) and phase control (thyristor firing - firing angle adjustment with zero-crossing circuit).
+
+![](Image/2.jpg)
+
+The purpose of this circuit is to observe the natural conduction of the thyristor when the gate receives a pulse.
+
+![](Image/3.jpg)
+
+### PROTEUS
+
 For microcontroller development ARDUINO we will use PROTEUS in the development of the control system.
 
 ![](Image/1.jpg)
