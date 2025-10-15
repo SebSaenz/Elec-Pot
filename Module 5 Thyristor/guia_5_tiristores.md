@@ -77,10 +77,12 @@ The **thyristor (SCR)** is well suited for this system because it allows precise
 
 
 ## 5. Simulation
+For microcontroller development ARDUINO we will use PROTEUS in the development of the control system.
 
 ![](Image/1.jpg)
 
-![](Image/2.jpg)
+By using a potentiometer on the Arduino's analog inputs, we can generate a gate signal and thus adjust the firing angle of the thyristor. 
+The system controls the output power to an AC load using an Arduino that reads the voltage from a potentiometer and converts it into a delay time for triggering an SCR. To ensure safety, two PC817 optocouplers electrically isolate the Arduino's low-voltage control circuit from the high-voltage section of the thyristor. By varying the firing point within the AC cycle according to the analog input, the average voltage applied to the load is precisely regulated.
 
 ---
 
