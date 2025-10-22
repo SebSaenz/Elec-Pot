@@ -1,102 +1,88 @@
-# Thyristors and Phase Control
+# Controlled Rectifiers
 
-## 1️. Thyristor Concept
-A **thyristor** is a semiconductor switching device that belongs to the family of controlled electronic switches.  
-Its name comes from *Thyristor* (a contraction of *Thyratron* and *Transistor*).  
-The most representative member is the **SCR** (*Silicon Controlled Rectifier*).
+## 1️. Concept
+**Controlled rectifiers** are AC-DC converters that use controllable semiconductor devices (mainly thyristors or SCRs) to convert alternating voltage into direct voltage, with the ability to regulate the output voltage through the control of the firing angle (α).
 
-It consists of **four alternating layers of P-type and N-type material (PNPN)**, creating three PN junctions and three terminals:
+## Main Characteristics
+- Output voltage control through firing angle α
+- Operation in rectifier mode (0° < α < 90°)
+- Operation in inverter mode (90° < α < 180°)
+- Natural (line) commutation
+---
 
-- **Anode (A):** connected to the outer P layer.  
-- **Cathode (K):** connected to the outer N layer.  
-- **Gate (G):** linked to the inner region.
+## Single-Phase Fully Controlled Rectifier
+### Basic Configuration
 
-## Thyristor structure, equivalent circuit and symbol
-![alt text](tiristor2.gif)
+The single-phase full-wave controlled rectifier uses four thyristors (T₁, T₂, T₃, T₄) connected in a bridge configuration:
 
-Its behavior is similar to that of a bistable switch:
+![](Image/1.jpeg)
 
-- In the **blocking** state, it withstands the voltage between anode and cathode with only a tiny leakage current.  
-- When a current pulse is applied to the gate, the device turns **on** and remains conducting as long as the anode current exceeds the **holding current**.  
-- To return to the blocking state, the current must fall below that threshold or the polarity must be reversed.
+### Components:
+- T₁, T₂, T₃, T₄: Thyristors (SCR)
+- Vs: AC supply voltage (rms)
+- Vo: DC output voltage
+- α: Firing angle
 
-The SCR is the basic type, but there are other variants: **TRIAC** (bidirectional conduction), **DIAC** (trigger device), **GTO** (*Gate Turn-Off Thyristor*), etc.  
-Its main advantage is the ability to control large amounts of power using low-energy control signals.
+### Operating Principle
+#### Firing Sequence
+
+| Period | Thyristors ON | Output Voltage |
+|---------|---------------|-------------------|
+| α → π | T₁, T₂ | Vo = Vs (positive) |
+| π + α → 2π | T₃, T₄ | Vo = Vs (reflected negative) |
+
+**Control Signals:**
+- T₁ and T₂ are triggered simultaneously at ωt = α
+- T₃ and T₄ are triggered simultaneously at ωt = π + α
+---
+
+## Operating Modes
+
+### 1. Rectifier Mode  (0° < α < 90°)
+
+$$V_o > 0$$
+$$I_o > 0$$
+$$P_o > 0 \text{ (power flow: AC → DC)}$$
+
+**Applications:**
+- Battery charging
+- Variable DC power supply
+- DC motor control
+
+### 2.  Inverter Mode (90° < α < 180°)
+
+$$V_o < 0$$
+$$I_o > 0 \text{ (from the load)}$$
+$$P_o < 0 \text{ ((power flow: DC → AC)}$$
+
+**Requirement:**
+- The load must include a voltage source (battery, motor)
+
+**Aplicaciones:**
+- Regenerative braking
+- Power return to the grid
+
+### 3. Operación en Cuatro Cuadrantes
+
+|  Quadrant | Vo | Io | Operation |
+|-----------|----|----|-----------|
+| I | + | + |  Rectifier |
+| II | - | + | Inverterr |
+| III | - | - | Rectifier (inverted voltage) |
+| IV | + | - | Inverter (inverted current) |
 
 ---
 
-## 2️. Problem Statement: Phase-Controlled Switch
-In many AC (alternating current) applications, it is necessary to regulate the power delivered to a load without introducing significant losses.  
-An efficient solution is to use a **phase-controlled switch**, which delays the conduction point within each half-cycle.
+## Aplicaciones
 
-Operating principle:
-
-1. During each half-cycle of the AC voltage, a **firing angle (\(\alpha\))** is set.  
-2. The device conducts only from that angle to the end of the half-cycle.  
-3. Increasing \(\alpha\) decreases the average power applied to the load.
-
-Common applications:
-- Light dimmers.  
-- Temperature control in heaters.  
-- Speed regulation in motors.
-
-The **thyristor (SCR)** is well suited for this system because it allows precise control of the firing instant.
+-DC Motor Control
+-Battery Chargers
+-Regulated Power Supplie
+-Industrial Drives
 
 ---
-
-## 3️. Documentation Start: SCR, DIAC, and Trigger Circuits
-### SCR (Silicon Controlled Rectifier)
-- Allows current conduction in only one direction.  
-- Once triggered by the gate, it remains on until the current falls below the holding value.
-
-### DIAC
-- A bidirectional trigger device.  
-- Stays non-conductive until its breakover voltage is reached, at which point it conducts in either direction.  
-- Used with SCRs or TRIACs to achieve stable and symmetrical triggering.
-
-### Trigger Circuits
-- **RC Network + DIAC:** a capacitor charges through a resistor in each half-cycle; once the voltage reaches the DIAC breakover voltage, it conducts and sends a pulse to the gate of the SCR or TRIAC. Adjusting the resistor (potentiometer) sets the firing angle.  
-- **Optocoupler (e.g., MOC3021):** isolates the control circuit from the power stage, reducing interference.  
-- **Microcontroller-based triggering:** detects the zero-crossing of the AC waveform and sends a pulse at the desired moment, providing flexible control.
-
----
-
-## 4️. Commercial Components for Circuit Implementation
-| Component  | Type      | Max Voltage | Max Current | Notes |
-|------------|-----------|-------------|-------------|-------|
-| BT151-800R | SCR       | 800 V       | 12 A        | General-purpose, requires a heatsink at higher power. |
-| TIC106D    | SCR       | 400 V       | 5 A         | Suitable for medium loads. |
-| MCR100-8   | SCR       | 400 V       | 0.8 A       | TO-92 package, good for low-power applications. |
-| DB3        | DIAC      | 32 V (typ.) | 2 A peak    | Common trigger device for dimmers and phase control. |
-| BTA16-600B | TRIAC     | 600 V       | 16 A        | Controls loads in both half-cycles. |
-| MOC3021    | Optotriac | 400 V       | 100 mA      | Provides isolation between control electronics and the power stage. |
-
-> **Note:** Always ensure the rated voltage and current exceed the maximum circuit conditions, and use heatsinks when necessary.
-
----
-
 
 ## 5. Simulation
-The behavior of the tristors was analyzed in two different simulations.
-
-### LTSPICE
-
-A circuit was developed here consisting of an AC power supply stage (120V60Hz) and transformation (120/12V transformer) and phase control (thyristor firing - firing angle adjustment with zero-crossing circuit).
-
-![](Image/2.jpg)
-
-The purpose of this circuit is to observe the natural conduction of the thyristor when the gate receives a pulse.
-
-![](Image/3.jpg)
-
-### PROTEUS
-
-For microcontroller development ARDUINO we will use PROTEUS in the development of the control system.
-
-![](Image/1.jpg)
-
-By using a potentiometer on the Arduino's analog inputs, we can generate a gate signal and thus adjust the firing angle of the thyristor. 
-The system controls the output power to an AC load using an Arduino that reads the voltage from a potentiometer and converts it into a delay time for triggering an SCR. To ensure safety, two PC817 optocouplers electrically isolate the Arduino's low-voltage control circuit from the high-voltage section of the thyristor. By varying the firing point within the AC cycle according to the analog input, the average voltage applied to the load is precisely regulated.
 
 ---
 
