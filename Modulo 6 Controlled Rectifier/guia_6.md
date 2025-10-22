@@ -15,6 +15,8 @@
 
 The single-phase full-wave controlled rectifier uses four thyristors (T₁, T₂, T₃, T₄) connected in a bridge configuration:
 
+![]/1.jpeg
+
 ---
 
 ## 3️. Documentation Start: SCR, DIAC, and Trigger Circuits
