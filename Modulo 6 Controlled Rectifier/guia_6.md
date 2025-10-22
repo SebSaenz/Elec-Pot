@@ -2,6 +2,7 @@
 
 ## 1️. Concept
 **Controlled rectifiers** are AC-DC converters that use controllable semiconductor devices (mainly thyristors or SCRs) to convert alternating voltage into direct voltage, with the ability to regulate the output voltage through the control of the firing angle (α).
+phase-controlled rectifiers, which use thyristors instead of diodes to obtain variable output voltages by adjusting the firing angle through short gate pulses, with thyristors turning off by natural commutation when input voltage becomes negative. These controlled rectifiers are simple, inexpensive, have efficiency exceeding 95%, and are widely used in industrial applications like variable-speed drives from fractional to megawatt power ratings. They are classified into single-phase and three-phase converters, each subdivided into semiconverters (single-quadrant, same polarity voltage and current) and full converters (four-quadrant, where output voltage can be positive or negative but current remains unidirectional).
 
 ## Main Characteristics
 - Output voltage control through firing angle α
