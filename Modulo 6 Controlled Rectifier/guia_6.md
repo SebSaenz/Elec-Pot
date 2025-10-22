@@ -15,39 +15,70 @@
 
 The single-phase full-wave controlled rectifier uses four thyristors (T₁, T₂, T₃, T₄) connected in a bridge configuration:
 
-![]/1.jpeg
+![](Image/1.jpeg)
+
+### Components:
+- T₁, T₂, T₃, T₄: Thyristors (SCR)
+- Vs: AC supply voltage (rms)
+- Vo: DC output voltage
+- α: Firing angle
+
+### Operating Principle
+#### Firing Sequence
+
+| Period | Thyristors ON | Output Voltage |
+|---------|---------------|-------------------|
+| α → π | T₁, T₂ | Vo = Vs (positive) |
+| π + α → 2π | T₃, T₄ | Vo = Vs (reflected negative) |
+
+**Control Signals:**
+- T₁ and T₂ are triggered simultaneously at ωt = α
+- T₃ and T₄ are triggered simultaneously at ωt = π + α
+---
+
+## Operating Modes
+
+### 1. Rectifier Mode  (0° < α < 90°)
+
+$$V_o > 0$$
+$$I_o > 0$$
+$$P_o > 0 \text{ (flujo de potencia: AC → DC)}$$
+
+**Aplicaciones:**
+- Carga de baterías
+- Alimentación DC variable
+- Control de motores DC
+
+### 2. Modo Inversor (90° < α < 180°)
+
+$$V_o < 0$$
+$$I_o > 0 \text{ (por la carga)}$$
+$$P_o < 0 \text{ (flujo de potencia: DC → AC)}$$
+
+**Requisito:**
+- Carga debe tener una fuente de voltaje (batería, motor)
+
+**Aplicaciones:**
+- Frenado regenerativo
+- Retorno de energía a la red
+
+### 3. Operación en Cuatro Cuadrantes
+
+| Cuadrante | Vo | Io | Operación |
+|-----------|----|----|-----------|
+| I | + | + | Rectificador |
+| II | - | + | Inversor |
+| III | - | - | Rectificador (voltaje invertido) |
+| IV | + | - | Inversor (corriente invertida) |
 
 ---
 
-## 3️. Documentation Start: SCR, DIAC, and Trigger Circuits
-### SCR (Silicon Controlled Rectifier)
-- Allows current conduction in only one direction.  
-- Once triggered by the gate, it remains on until the current falls below the holding value.
+## Aplicaciones
 
-### DIAC
-- A bidirectional trigger device.  
-- Stays non-conductive until its breakover voltage is reached, at which point it conducts in either direction.  
-- Used with SCRs or TRIACs to achieve stable and symmetrical triggering.
-
-### Trigger Circuits
-- **RC Network + DIAC:** a capacitor charges through a resistor in each half-cycle; once the voltage reaches the DIAC breakover voltage, it conducts and sends a pulse to the gate of the SCR or TRIAC. Adjusting the resistor (potentiometer) sets the firing angle.  
-- **Optocoupler (e.g., MOC3021):** isolates the control circuit from the power stage, reducing interference.  
-- **Microcontroller-based triggering:** detects the zero-crossing of the AC waveform and sends a pulse at the desired moment, providing flexible control.
-
----
-
-## 4️. Commercial Components for Circuit Implementation
-| Component  | Type      | Max Voltage | Max Current | Notes |
-|------------|-----------|-------------|-------------|-------|
-| BT151-800R | SCR       | 800 V       | 12 A        | General-purpose, requires a heatsink at higher power. |
-| TIC106D    | SCR       | 400 V       | 5 A         | Suitable for medium loads. |
-| MCR100-8   | SCR       | 400 V       | 0.8 A       | TO-92 package, good for low-power applications. |
-| DB3        | DIAC      | 32 V (typ.) | 2 A peak    | Common trigger device for dimmers and phase control. |
-| BTA16-600B | TRIAC     | 600 V       | 16 A        | Controls loads in both half-cycles. |
-| MOC3021    | Optotriac | 400 V       | 100 mA      | Provides isolation between control electronics and the power stage. |
-
-> **Note:** Always ensure the rated voltage and current exceed the maximum circuit conditions, and use heatsinks when necessary.
-
+-Control de Motores DC
+-Cargadores de Baterías
+-Fuentes de Alimentación Reguladas
+-Accionamientos Industriales
 ---
 
 
