@@ -1,46 +1,19 @@
-# Thyristors and Phase Control
+# Controlled Rectifiers
 
-## 1️. Thyristor Concept
-A **thyristor** is a semiconductor switching device that belongs to the family of controlled electronic switches.  
-Its name comes from *Thyristor* (a contraction of *Thyratron* and *Transistor*).  
-The most representative member is the **SCR** (*Silicon Controlled Rectifier*).
+## 1️. Concept
+**Controlled rectifiers** are AC-DC converters that use controllable semiconductor devices (mainly thyristors or SCRs) to convert alternating voltage into direct voltage, with the ability to regulate the output voltage through the control of the firing angle (α).
 
-It consists of **four alternating layers of P-type and N-type material (PNPN)**, creating three PN junctions and three terminals:
-
-- **Anode (A):** connected to the outer P layer.  
-- **Cathode (K):** connected to the outer N layer.  
-- **Gate (G):** linked to the inner region.
-
-## Thyristor structure, equivalent circuit and symbol
-![alt text](tiristor2.gif)
-
-Its behavior is similar to that of a bistable switch:
-
-- In the **blocking** state, it withstands the voltage between anode and cathode with only a tiny leakage current.  
-- When a current pulse is applied to the gate, the device turns **on** and remains conducting as long as the anode current exceeds the **holding current**.  
-- To return to the blocking state, the current must fall below that threshold or the polarity must be reversed.
-
-The SCR is the basic type, but there are other variants: **TRIAC** (bidirectional conduction), **DIAC** (trigger device), **GTO** (*Gate Turn-Off Thyristor*), etc.  
-Its main advantage is the ability to control large amounts of power using low-energy control signals.
-
+## Main Characteristics
+- Output voltage control through firing angle α
+- Operation in rectifier mode (0° < α < 90°)
+- Operation in inverter mode (90° < α < 180°)
+- Natural (line) commutation
 ---
 
-## 2️. Problem Statement: Phase-Controlled Switch
-In many AC (alternating current) applications, it is necessary to regulate the power delivered to a load without introducing significant losses.  
-An efficient solution is to use a **phase-controlled switch**, which delays the conduction point within each half-cycle.
+## Single-Phase Fully Controlled Rectifier
+### Basic Configuration
 
-Operating principle:
-
-1. During each half-cycle of the AC voltage, a **firing angle (\(\alpha\))** is set.  
-2. The device conducts only from that angle to the end of the half-cycle.  
-3. Increasing \(\alpha\) decreases the average power applied to the load.
-
-Common applications:
-- Light dimmers.  
-- Temperature control in heaters.  
-- Speed regulation in motors.
-
-The **thyristor (SCR)** is well suited for this system because it allows precise control of the firing instant.
+The single-phase full-wave controlled rectifier uses four thyristors (T₁, T₂, T₃, T₄) connected in a bridge configuration:
 
 ---
 
