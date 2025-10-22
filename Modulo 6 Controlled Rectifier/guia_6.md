@@ -79,30 +79,10 @@ $$P_o < 0 \text{ ((power flow: DC → AC)}$$
 -Battery Chargers
 -Regulated Power Supplie
 -Industrial Drives
+
 ---
 
-
 ## 5. Simulation
-The behavior of the tristors was analyzed in two different simulations.
-
-### LTSPICE
-
-A circuit was developed here consisting of an AC power supply stage (120V60Hz) and transformation (120/12V transformer) and phase control (thyristor firing - firing angle adjustment with zero-crossing circuit).
-
-![](Image/2.jpg)
-
-The purpose of this circuit is to observe the natural conduction of the thyristor when the gate receives a pulse.
-
-![](Image/3.jpg)
-
-### PROTEUS
-
-For microcontroller development ARDUINO we will use PROTEUS in the development of the control system.
-
-![](Image/1.jpg)
-
-By using a potentiometer on the Arduino's analog inputs, we can generate a gate signal and thus adjust the firing angle of the thyristor. 
-The system controls the output power to an AC load using an Arduino that reads the voltage from a potentiometer and converts it into a delay time for triggering an SCR. To ensure safety, two PC817 optocouplers electrically isolate the Arduino's low-voltage control circuit from the high-voltage section of the thyristor. By varying the firing point within the AC cycle according to the analog input, the average voltage applied to the load is precisely regulated.
 
 ---
 
