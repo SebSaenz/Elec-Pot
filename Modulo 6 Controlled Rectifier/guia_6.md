@@ -42,43 +42,43 @@ The single-phase full-wave controlled rectifier uses four thyristors (T₁, T₂
 
 $$V_o > 0$$
 $$I_o > 0$$
-$$P_o > 0 \text{ (flujo de potencia: AC → DC)}$$
+$$P_o > 0 \text{ (power flow: AC → DC)}$$
 
-**Aplicaciones:**
-- Carga de baterías
-- Alimentación DC variable
-- Control de motores DC
+**Applications:**
+- Battery charging
+- Variable DC power supply
+- DC motor control
 
-### 2. Modo Inversor (90° < α < 180°)
+### 2.  Inverter Mode (90° < α < 180°)
 
 $$V_o < 0$$
-$$I_o > 0 \text{ (por la carga)}$$
-$$P_o < 0 \text{ (flujo de potencia: DC → AC)}$$
+$$I_o > 0 \text{ (from the load)}$$
+$$P_o < 0 \text{ ((power flow: DC → AC)}$$
 
-**Requisito:**
-- Carga debe tener una fuente de voltaje (batería, motor)
+**Requirement:**
+- The load must include a voltage source (battery, motor)
 
 **Aplicaciones:**
-- Frenado regenerativo
-- Retorno de energía a la red
+- Regenerative braking
+- Power return to the grid
 
 ### 3. Operación en Cuatro Cuadrantes
 
-| Cuadrante | Vo | Io | Operación |
+|  Quadrant | Vo | Io | Operation |
 |-----------|----|----|-----------|
-| I | + | + | Rectificador |
-| II | - | + | Inversor |
-| III | - | - | Rectificador (voltaje invertido) |
-| IV | + | - | Inversor (corriente invertida) |
+| I | + | + |  Rectifier |
+| II | - | + | Inverterr |
+| III | - | - | Rectifier (inverted voltage) |
+| IV | + | - | Inverter (inverted current) |
 
 ---
 
 ## Aplicaciones
 
--Control de Motores DC
--Cargadores de Baterías
--Fuentes de Alimentación Reguladas
--Accionamientos Industriales
+-DC Motor Control
+-Battery Chargers
+-Regulated Power Supplie
+-Industrial Drives
 ---
 
 
