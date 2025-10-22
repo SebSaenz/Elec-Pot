@@ -15,7 +15,8 @@
 
 The single-phase full-wave controlled rectifier uses four thyristors (T₁, T₂, T₃, T₄) connected in a bridge configuration:
 
-![](Image/1.jpeg) ![](Image/5.jpeg) 
+![](Image/1.jpeg) 
+![](Image/5.png) 
 
 ### Components:
 - T₁, T₂, T₃, T₄: Thyristors (SCR)
@@ -62,7 +63,7 @@ $$P_o < 0 \text{ ((power flow: DC → AC)}$$
 - Regenerative braking
 - Power return to the grid
 
-### 3. Operación en Cuatro Cuadrantes
+### 3. Four Quadrant Operation
 
 |  Quadrant | Vo | Io | Operation |
 |-----------|----|----|-----------|
@@ -73,7 +74,7 @@ $$P_o < 0 \text{ ((power flow: DC → AC)}$$
 
 ---
 
-## Aplicaciones
+## Applications
 
 - DC Motor Control
 - Battery Chargers
@@ -84,9 +85,22 @@ $$P_o < 0 \text{ ((power flow: DC → AC)}$$
 
 ## 5. Simulation
 
-![](Image/2.jpeg)
-![](Image/3.jpeg)
-![](Image/4.jpeg)
+In the following ltspice circuit, we will see a Single-phase full-wave rectifier circuit
+
+![](Image/2.png)
+
+In purpose of Emulate a firing angle, we use 2 different types of pulse sources. These pulse sources use a different Tdelay to have two firing angles for the SCRs at their gate input.
+
+```
+U1/U2: PULSE(0 10 3.89m 1u 1u 100u 16.67m)
+with Tdelay 3.89m for α=84°
+```
+```
+U3/U4: PULSE(0 10 12.22m 1u 1u 100u 16.67m)
+with Tdelay 12.22m for α=264°
+```
+
+![output voltage and current at load R1](Image/4.png)
 
 ---
 
