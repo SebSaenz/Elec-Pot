@@ -17,7 +17,8 @@ The single-phase full-wave controlled rectifier uses four thyristors (T₁, T₂
 
 ![](Image/1.jpeg) 
 ![](Image/5.png) 
-
+<p align="center"><b>Fig. 1 and 2.</b>
+  
 ### Components:
 - T₁, T₂, T₃, T₄: Thyristors (SCR)
 - Vs: AC supply voltage (rms)
@@ -88,6 +89,7 @@ $$P_o < 0 \text{ ((power flow: DC → AC)}$$
 In the following ltspice circuit, we will see a Single-phase full-wave rectifier circuit
 
 ![](Image/2.png)
+<p align="center"><b>Fig. 3.</b> Simulation in LTSpice
 
 In purpose of Emulate a firing angle, we use 2 different types of pulse sources. These pulse sources use a different Tdelay to have two firing angles for the SCRs at their gate input.
 
@@ -100,8 +102,9 @@ U3/U4: PULSE(0 10 12.22m 1u 1u 100u 16.67m)
 with Tdelay 12.22m for α=264°
 ```
 
-![output voltage and current at load R1](Image/4.png)
-
+![](Image/4.png)
+<p align="center"><b>Fig. 4.</b> output voltage and current at load R1. 
+  
 ---
 
 ### References
