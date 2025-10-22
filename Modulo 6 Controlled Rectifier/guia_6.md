@@ -15,7 +15,7 @@
 
 The single-phase full-wave controlled rectifier uses four thyristors (T₁, T₂, T₃, T₄) connected in a bridge configuration:
 
-![](Image/1.jpeg)
+![](Image/1.jpeg) ![](Image/5.jpeg) 
 
 ### Components:
 - T₁, T₂, T₃, T₄: Thyristors (SCR)
@@ -75,14 +75,18 @@ $$P_o < 0 \text{ ((power flow: DC → AC)}$$
 
 ## Aplicaciones
 
--DC Motor Control
--Battery Chargers
--Regulated Power Supplie
--Industrial Drives
+- DC Motor Control
+- Battery Chargers
+- Regulated Power Supplie
+- Industrial Drives
 
 ---
 
 ## 5. Simulation
+
+![](Image/2.jpeg)
+![](Image/3.jpeg)
+![](Image/4.jpeg)
 
 ---
 
