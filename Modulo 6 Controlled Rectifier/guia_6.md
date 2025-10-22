@@ -60,7 +60,7 @@ $$P_o < 0 \text{ ((power flow: DC → AC)}$$
 **Requirement:**
 - The load must include a voltage source (battery, motor)
 
-**Aplicaciones:**
+**Applications:**
 - Regenerative braking
 - Power return to the grid
 
