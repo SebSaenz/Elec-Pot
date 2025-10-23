@@ -107,6 +107,11 @@ with Tdelay 12.22m for α=264°
 <p align="center"><b>Fig. 4.</b> output voltage and current at load R1. 
   
 ---
+Finally, we will show a short video explaining the circuit with all participants.
+
+[![](https://youtu.be/VGPlwsDyyEI)
+
+---
 
 ### References
 - Hart, D. W. (2001). *Power Electronics*. Pearson Education.  
