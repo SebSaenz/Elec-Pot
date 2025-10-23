@@ -109,7 +109,7 @@ with Tdelay 12.22m for α=264°
 ---
 Finally, we will show a short video explaining the circuit with all participants.
 
-[![](https://youtu.be/VGPlwsDyyEI)
+https://www.youtube.com/watch?v=VGPlwsDyyEI
 
 ---
 
