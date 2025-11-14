@@ -2,6 +2,7 @@
 
 ## 1️. Concept
 **Controlled rectifiers** are AC-DC converters that use controllable semiconductor devices (mainly thyristors or SCRs) to convert alternating voltage into direct voltage, with the ability to regulate the output voltage through the control of the firing angle (α).
+phase-controlled rectifiers, which use thyristors instead of diodes to obtain variable output voltages by adjusting the firing angle through short gate pulses, with thyristors turning off by natural commutation when input voltage becomes negative. These controlled rectifiers are simple, inexpensive, have efficiency exceeding 95%, and are widely used in industrial applications like variable-speed drives from fractional to megawatt power ratings. They are classified into single-phase and three-phase converters, each subdivided into semiconverters (single-quadrant, same polarity voltage and current) and full converters (four-quadrant, where output voltage can be positive or negative but current remains unidirectional).
 
 ## Main Characteristics
 - Output voltage control through firing angle α
@@ -15,8 +16,10 @@
 
 The single-phase full-wave controlled rectifier uses four thyristors (T₁, T₂, T₃, T₄) connected in a bridge configuration:
 
-![](Image/1.jpeg)
-
+![](Image/1.jpeg) 
+![](Image/5.png) 
+<p align="center"><b>Fig. 1 and 2.</b>
+  
 ### Components:
 - T₁, T₂, T₃, T₄: Thyristors (SCR)
 - Vs: AC supply voltage (rms)
@@ -58,11 +61,11 @@ $$P_o < 0 \text{ ((power flow: DC → AC)}$$
 **Requirement:**
 - The load must include a voltage source (battery, motor)
 
-**Aplicaciones:**
+**Applications:**
 - Regenerative braking
 - Power return to the grid
 
-### 3. Operación en Cuatro Cuadrantes
+### 3. Four Quadrant Operation
 
 |  Quadrant | Vo | Io | Operation |
 |-----------|----|----|-----------|
@@ -73,16 +76,40 @@ $$P_o < 0 \text{ ((power flow: DC → AC)}$$
 
 ---
 
-## Aplicaciones
+## Applications
 
--DC Motor Control
--Battery Chargers
--Regulated Power Supplie
--Industrial Drives
+- DC Motor Control
+- Battery Chargers
+- Regulated Power Supplie
+- Industrial Drives
 
 ---
 
 ## 5. Simulation
+
+In the following ltspice circuit, we will see a Single-phase full-wave rectifier circuit
+
+![](Image/2.png)
+<p align="center"><b>Fig. 3.</b> Simulation in LTSpice
+
+In purpose of Emulate a firing angle, we use 2 different types of pulse sources. These pulse sources use a different Tdelay to have two firing angles for the SCRs at their gate input.
+
+```
+U1/U2: PULSE(0 10 3.89m 1u 1u 100u 16.67m)
+with Tdelay 3.89m for α=84°
+```
+```
+U3/U4: PULSE(0 10 12.22m 1u 1u 100u 16.67m)
+with Tdelay 12.22m for α=264°
+```
+
+![](Image/4.png)
+<p align="center"><b>Fig. 4.</b> output voltage and current at load R1. 
+  
+---
+Finally, we will show a short video explaining the circuit with all participants.
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/VGPlwsDyyEI)](https://youtu.be/VGPlwsDyyEI)
 
 ---
 
