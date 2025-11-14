@@ -281,7 +281,7 @@ void loop() {
 ```
 ---
 
-## 10. Simulation and Testing
+## 10. Simulation
 
 ---
 
