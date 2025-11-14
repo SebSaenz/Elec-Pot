@@ -283,6 +283,7 @@ void loop() {
 
 ## 10. Simulation
 
+![](Image/1.jpg)
 ---
 
 ## References
@@ -290,12 +291,6 @@ void loop() {
 1. **Hart, D. W.** (2011). *Power Electronics*. McGraw-Hill.
 2. **Rashid, M. H.** (2006). *Power Electronics Handbook: Devices, Circuits and Applications* (2nd ed.). Elsevier Academic.
 3. **Mohan, N., Undeland, T. M., & Robbins, W. P.** (2003). *Power Electronics: Converters, Applications, and Design*. Wiley.
-4. **Arduino Official Documentation**: [https://www.arduino.cc](https://www.arduino.cc)
-5. **IR2110 Datasheet**: High and Low Side Driver - International Rectifier
+4. **IR2110 Datasheet**: High and Low Side Driver - International Rectifier
 
 ---
-**License:** Creative Commons Attribution 4.0 International License
-
-**Authors:** Based on the work by Youssef, M., Aloui, F., Boubahri, C., & Fetni, S. (2020)
-
-**Last Updated:** November 2024
