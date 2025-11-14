@@ -40,11 +40,6 @@ The full-bridge inverter is the fundamental structure for single-phase DC-AC con
 | 0 < t < T/2 | S₁, S₃ | u = +V_DC |
 | T/2 < t < T | S₂, S₄ | u = -V_DC |
 
-> **Key Points:**
-> - Complementary switching prevents short circuits
-> - Antiparallel diodes allow bidirectional current flow
-> - Output voltage alternates between +V_DC and -V_DC
-
 ---
 
 ## 3. Operating Modes
