@@ -4,7 +4,9 @@
 
 ## 1. Concept
 
-**Inverters** are power electronic circuits that convert DC voltage into AC voltage. They are essential in applications such as:
+**Inverters** are power electronic circuits that convert DC voltage into AC voltage. That devices convert direct current (DC) into alternating current (AC). They achieve this by using controlled switching components, typically transistors arranged in an H-Bridge circuit, to rapidly change the polarity of the input DC voltage. This switching creates a waveform that mimics AC voltage. The output quality varies depending on the switching technique, ranging from basic square waves to advanced Pulse Width Modulation (PWM) methods that reduce distortion and produce a near-sinusoidal AC output.
+
+They are essential in applications such as:
 
 
 ### Main Characteristics
@@ -281,7 +283,7 @@ void loop() {
 ```
 ---
 
-## 10. Simulation
+## 9. Simulation
 
 ![](Image/1.jpg)
 ---
