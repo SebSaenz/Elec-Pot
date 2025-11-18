@@ -281,7 +281,16 @@ void loop() {
 ## 9. Simulation
 
 ![](Image/1.jpg)
+![](Image/2.jpg)
 ---
+
+## 10. Final Inversor
+
+The construction of the inverter presented several challenges for its implementation in a baquela and the layout of the components.
+
+![](Image/3.jpeg)
+
+We based our work on the guidelines received for the use of the H-shaped MOSFET and considered the possibility of adding an RCD circuit for grounding and protection against current leakage. In the end, we decided not to implement it, and when testing the inverter on the 12V power supply, we lost a MOSFET, which affected the inverter's performance and its presentation.
 
 ## References
 
