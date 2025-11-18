@@ -5,7 +5,7 @@ float t4=2744.6;
 float d1=t2-t1;
 float d2=t3-t2;
 float d3=t4-t3;
-float d4=10000-(2^t4);
+float d4=10000-(2*t4);
 
 void setup() {
   // put your setup code here, to run once:
