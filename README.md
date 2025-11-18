@@ -27,7 +27,7 @@ Estudiantes:
 | 3      | Transistores de Potencia                  | [Ver Guía](./module%203%20transistors/guia_3_transistores_de_potencia.md) |
 | 4      | Convertidores DC-DC                       | [Ver Guía](./Module%204%20DC–DC%20C/Guia_4_DC–DC%20C.md)   |
 | 5      | Tiristores y Control de Potencia          | [Ver Guía](./Module%205%20Thyristor/guia_5_tiristores.md)            |
-| 6      | Proyecto Final – Inversor para Sistema PV | [Ver Guía]((https://github.com/SebSaenz/Elec-Pot/blob/main/Modulo%207%20Single%20Phase%20Inverter%20with%20Digital%20PWM%2Fguia_7.md))        |
+| 6      | Proyecto Final – Inversor para Sistema PV | [Ver Guía](./Modulo%207%20Single%20Phase%20Inverter%20with%20Digital%20PWM%2Fguia_7.md)        |
 
 
 ## Herramientas utilizadas
